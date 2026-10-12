@@ -45,5 +45,6 @@
 (function(){function g(){var s=window.gmState;if(!s){try{s=JSON.parse(sessionStorage.getItem("gmc"))}catch(e){}}return s||{total:0,counts:{}}}
 window.gmDash=function(){var s=g(),c=s.counts||{},m={sTotal:s.total,sSolar:c.solar,sStar:c.star,sHealth:c.health,sWifi:c.wifi,sElec:c.elec};for(var k in m){var e=document.getElementById(k);if(e)e.textContent=m[k]||0}};window.gmDash()})();
 </script>
+<script src="effects.js" defer></script>
 </body>
 </html>
